@@ -39,6 +39,29 @@ Module is to be used with Terraform > 0.12.
 Module managed by [Marcin Cuber](https://github.com/marcincuber) [LinkedIn](https://www.linkedin.com/in/marcincuber/).
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+## Inputs
+
+| Name | Description | Type | Default | Required |
+|------|-------------|:----:|:-----:|:-----:|
+| alias\_name | The display name of the alias. | string | n/a | yes |
+| customer\_master\_key\_spec | Specifies whether the key contains a symmetric key or an asymmetric key pair and the encryption algorithms or signing algorithms that the key supports. Valid values: SYMMETRIC\_DEFAULT, RSA\_2048, RSA\_3072, RSA\_4096, ECC\_NIST\_P256, ECC\_NIST\_P384, ECC\_NIST\_P521, or ECC\_SECG\_P256K1. Defaults to SYMMETRIC\_DEFAULT. | string | `"SYMMETRIC_DEFAULT"` | no |
+| deletion\_window\_in\_days | Duration in days after which the key is deleted after destruction of the resource. | number | `"10"` | no |
+| description | The description of the key as viewed in AWS console. | string | `"Parameter Store KMS master key"` | no |
+| enable\_key\_rotation | Specifies whether key rotation is enabled. | bool | `"true"` | no |
+| enabled | Specifies whether to create resources within this module. | bool | `"true"` | no |
+| is\_enabled | Specifies whether the key is enabled. | bool | `"true"` | no |
+| key\_usage | Specifies the intended use of the key. Defaults to ENCRYPT\_DECRYPT, and only symmetric encryption and decryption are supported. | string | `"ENCRYPT_DECRYPT"` | no |
+| policy | A valid policy JSON document. For more information about building AWS IAM policy documents with Terraform. | string | `""` | no |
+| tags | Mapping of additional tags. | map(string) | `{}` | no |
+
+## Outputs
+
+| Name | Description |
+|------|-------------|
+| alias\_arn | KMS Key Alias ARN. |
+| alias\_name | KMS Key Alias name. |
+| key\_arn | KMS Key ARN. |
+| key\_id | KMS Key ID. |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
