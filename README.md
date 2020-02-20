@@ -10,11 +10,10 @@ Terraform 0.12. Pin module version to `~> v1.0`. Submit pull-requests to `master
 
 ```hcl
 module "kms" {
-	source = "umotif-public/kms/aws"
+  source = "umotif-public/kms/aws"
   version = "~> 1.0"
 
-	enabled = true
-
+  enabled = true
   description             = "KMS test description"
   alias_name              = "test-key"
   deletion_window_in_days = 7
