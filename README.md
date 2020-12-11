@@ -1,3 +1,5 @@
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/umotif-public/terraform-aws-kms?style=social)
+
 # terraform-aws-kms
 
 Terraform module to configure a KMS Customer Master Key (CMK) and its alias.
