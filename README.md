@@ -1,4 +1,4 @@
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/umotif-public/terraform-aws-kms)](https://github.com/umotif-public/terraform-aws-kms/releases/1.0.3)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/umotif-public/terraform-aws-kms)](https://github.com/umotif-public/terraform-aws-kms/releases/latest)
 
 # terraform-aws-kms
 
@@ -6,14 +6,15 @@ Terraform module to configure a KMS Customer Master Key (CMK) and its alias.
 
 ## Terraform versions
 
-Terraform 0.12. Pin module version to `~> v1.0`. Submit pull-requests to `master` branch.
+Terraform 0.12 and provider version < 3.53.0. Pin module version to `~> v1.0`.
+For Terraform 0.12 with provider version >= 3.53.0. Pin module version to `~> v2.0`. Submit pull-requests to `main` branch.
 
 ## Usage
 
 ```hcl
 module "kms" {
   source = "umotif-public/kms/aws"
-  version = "~> 1.0.0"
+  version = "~> 2.0.0"
 
   enabled = true
   description             = "KMS test description"
@@ -33,13 +34,13 @@ Module is to be used with Terraform > 0.12.
 
 ## Examples
 
-* [KMS](https://github.com/umotif-public/terraform-aws-kms/tree/master/examples/core)
+* [KMS](https://github.com/umotif-public/terraform-aws-kms/tree/main/examples/core)
 
 ## Authors
 
-Module managed by [Marcin Cuber](https://github.com/marcincuber) [LinkedIn](https://www.linkedin.com/in/marcincuber/).
-Module managed by [Abdul Wahid](https://github.com/Ohid25) [LinkedIn](https://www.linkedin.com/in/abdul-wahid/).
-Module managed by [Sean Pascual](https://github.com/seanpascual) [LinkedIn](https://www.linkedin.com/in/sean-edward-pascual/).
+Module managed by [Marcin Cuber](https://github.com/marcincuber) ([LinkedIn](https://www.linkedin.com/in/marcincuber/)).\
+Module managed by [Abdul Wahid](https://github.com/Ohid25) ([LinkedIn](https://www.linkedin.com/in/abdul-wahid/)).\
+Module managed by [Sean Pascual](https://github.com/seanpascual) ([LinkedIn](https://www.linkedin.com/in/sean-edward-pascual/)).
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
@@ -47,13 +48,13 @@ Module managed by [Sean Pascual](https://github.com/seanpascual) [LinkedIn](http
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.12.31 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 2.41, < 3.53 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 3.53.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 2.41, < 3.53 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 3.53.0 |
 
 ## Modules
 
@@ -71,6 +72,7 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_alias_name"></a> [alias\_name](#input\_alias\_name) | The display name of the alias. | `string` | n/a | yes |
+| <a name="input_bypass_policy_lockout_safety_check"></a> [bypass\_policy\_lockout\_safety\_check](#input\_bypass\_policy\_lockout\_safety\_check) | Specifies whether to disable the policy lockout check performed when creating or updating the key's policy. | `bool` | `false` | no |
 | <a name="input_customer_master_key_spec"></a> [customer\_master\_key\_spec](#input\_customer\_master\_key\_spec) | Specifies whether the key contains a symmetric key or an asymmetric key pair and the encryption algorithms or signing algorithms that the key supports. Valid values: SYMMETRIC\_DEFAULT, RSA\_2048, RSA\_3072, RSA\_4096, ECC\_NIST\_P256, ECC\_NIST\_P384, ECC\_NIST\_P521, or ECC\_SECG\_P256K1. Defaults to SYMMETRIC\_DEFAULT. | `string` | `"SYMMETRIC_DEFAULT"` | no |
 | <a name="input_deletion_window_in_days"></a> [deletion\_window\_in\_days](#input\_deletion\_window\_in\_days) | Duration in days after which the key is deleted after destruction of the resource. | `number` | `10` | no |
 | <a name="input_description"></a> [description](#input\_description) | The description of the key as viewed in AWS console. | `string` | `"Parameter Store KMS master key"` | no |

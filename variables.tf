@@ -57,3 +57,8 @@ variable "alias_name" {
   description = "The display name of the alias."
 }
 
+variable "bypass_policy_lockout_safety_check" {
+  type        = bool
+  default     = false
+  description = "Specifies whether to disable the policy lockout check performed when creating or updating the key's policy."
+}

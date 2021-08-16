@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 <a name="unreleased"></a>
 ## [Unreleased]
 
+- Add new parameter 'bypass_policy_lockout_safety_check'
+
+
+<a name="1.0.3"></a>
+## [1.0.3] - 2021-08-17
+
+- Set provider limit ([#5](https://github.com/umotif-public/terraform-aws-kms/issues/5))
 - Update README.md
 
 
@@ -30,6 +37,7 @@ All notable changes to this project will be documented in this file.
 - Initial commit
 
 
-[Unreleased]: https://github.com/umotif-public/terraform-aws-kms/compare/1.0.2...HEAD
+[Unreleased]: https://github.com/umotif-public/terraform-aws-kms/compare/1.0.3...HEAD
+[1.0.3]: https://github.com/umotif-public/terraform-aws-kms/compare/1.0.2...1.0.3
 [1.0.2]: https://github.com/umotif-public/terraform-aws-kms/compare/1.0.1...1.0.2
 [1.0.1]: https://github.com/umotif-public/terraform-aws-kms/compare/1.0.0...1.0.1
