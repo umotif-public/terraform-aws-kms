@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file.
 <a name="unreleased"></a>
 ## [Unreleased]
 
+- Upgraded to 5.x compatibility + Added square brackets to list items requirement
 
 
 <a name="2.0.0"></a>

@@ -38,9 +38,7 @@ Module is to be used with Terraform > 0.12.
 
 ## Authors
 
-Module managed by [Marcin Cuber](https://github.com/marcincuber) ([LinkedIn](https://www.linkedin.com/in/marcincuber/)).\
-Module managed by [Abdul Wahid](https://github.com/Ohid25) ([LinkedIn](https://www.linkedin.com/in/abdul-wahid/)).\
-Module managed by [Sean Pascual](https://github.com/seanpascual) ([LinkedIn](https://www.linkedin.com/in/sean-edward-pascual/)).
+Module managed by [uMotif](https://github.com/umotif-public/).
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
@@ -48,13 +46,13 @@ Module managed by [Sean Pascual](https://github.com/seanpascual) ([LinkedIn](htt
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.0.11 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 3.46.0 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 3.53.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 3.46.0 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 3.53.0 |
 
 ## Modules
 
