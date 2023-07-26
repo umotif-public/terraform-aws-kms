@@ -16,7 +16,7 @@ resource "aws_kms_alias" "main" {
   count = var.enabled ? 1 : 0
 
   name          = "alias/${var.alias_name}"
-  target_key_id = join("", aws_kms_key.main.*.id)
+  target_key_id = aws_kms_key.main[0].id
 
   depends_on = [
     aws_kms_key.main
