@@ -62,3 +62,9 @@ variable "bypass_policy_lockout_safety_check" {
   default     = false
   description = "Specifies whether to disable the policy lockout check performed when creating or updating the key's policy."
 }
+
+variable "multi_region" {
+  type        = bool
+  default     = false
+  description = "Indicates whether the KMS key is a multi-Region (true) or regional (false) key. Defaults to false"
+}
