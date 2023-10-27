@@ -5,7 +5,12 @@ All notable changes to this project will be documented in this file.
 <a name="unreleased"></a>
 ## [Unreleased]
 
-- Upgraded to 5.x compatibility + Added square brackets to list items requirement
+
+
+<a name="2.1.0"></a>
+## [2.1.0] - 2023-07-26
+
+- Upgraded to 5.x compatibility + Added square brackets to list items r… ([#6](https://github.com/umotif-public/terraform-aws-kms/issues/6))
 
 
 <a name="2.0.0"></a>
@@ -43,7 +48,8 @@ All notable changes to this project will be documented in this file.
 - Initial commit
 
 
-[Unreleased]: https://github.com/umotif-public/terraform-aws-kms/compare/2.0.0...HEAD
+[Unreleased]: https://github.com/umotif-public/terraform-aws-kms/compare/2.1.0...HEAD
+[2.1.0]: https://github.com/umotif-public/terraform-aws-kms/compare/2.0.0...2.1.0
 [2.0.0]: https://github.com/umotif-public/terraform-aws-kms/compare/1.0.3...2.0.0
 [1.0.3]: https://github.com/umotif-public/terraform-aws-kms/compare/1.0.2...1.0.3
 [1.0.2]: https://github.com/umotif-public/terraform-aws-kms/compare/1.0.1...1.0.2

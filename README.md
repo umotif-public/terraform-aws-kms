@@ -46,13 +46,13 @@ Module managed by [uMotif](https://github.com/umotif-public/).
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.0.11 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 3.53.0 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 3.64.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 3.53.0 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 3.64.0 |
 
 ## Modules
 
@@ -78,6 +78,7 @@ No modules.
 | <a name="input_enabled"></a> [enabled](#input\_enabled) | Specifies whether to create resources within this module. | `bool` | `true` | no |
 | <a name="input_is_enabled"></a> [is\_enabled](#input\_is\_enabled) | Specifies whether the key is enabled. | `bool` | `true` | no |
 | <a name="input_key_usage"></a> [key\_usage](#input\_key\_usage) | Specifies the intended use of the key. Defaults to ENCRYPT\_DECRYPT, and only symmetric encryption and decryption are supported. | `string` | `"ENCRYPT_DECRYPT"` | no |
+| <a name="input_multi_region"></a> [multi\_region](#input\_multi\_region) | Indicates whether the KMS key is a multi-Region (true) or regional (false) key. Defaults to false | `bool` | `false` | no |
 | <a name="input_policy"></a> [policy](#input\_policy) | A valid policy JSON document. For more information about building AWS IAM policy documents with Terraform. | `string` | `""` | no |
 | <a name="input_tags"></a> [tags](#input\_tags) | Mapping of additional tags. | `map(string)` | `{}` | no |
 
